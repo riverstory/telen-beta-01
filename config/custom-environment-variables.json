@@ -1,0 +1,14 @@
+{
+    "port" : "PORT_TELENGARD_BETA",
+    "logs" : {
+        "path": "LOGS_PATH"
+    },
+    "redis" : {
+        "host" :  "REDIS_HOST",
+        "port" : "REDIS_PORT",
+        "secret" : "REDIS_SECRET"
+    },
+    "api" : {
+        "baseUrl": "TELENGARD_BETA_API"
+    }
+}

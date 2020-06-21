@@ -1,0 +1,8 @@
+{
+    "imageName" : "test-site",
+    "version" : {
+        "major" : "1",
+        "minor" : "1.0",
+        "full" : "1.0.0"
+    }
+}
