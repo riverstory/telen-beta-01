@@ -10,4 +10,7 @@ div.telengard-logo img {
 }
 p.telengard-welcome-to {
     text-transform: uppercase;
+    font-size: 2vw;
+    font-family: mono;
+    color: #999;
 }
