@@ -7,6 +7,9 @@ import { MainRoutingModule } from "./main-routing.module";
 // Component
 import { MainComponent } from "./main.component";
 
+// Services
+import * as services from 'src/app/core/services';
+
 @NgModule({
     imports: [
         CommonModule,
@@ -15,6 +18,8 @@ import { MainComponent } from "./main.component";
     declarations: [
         MainComponent
     ],
-    providers: []
+    providers: [
+    	services.BaseDataService
+    ]
 })
 export class MainModule {}
