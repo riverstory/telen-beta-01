@@ -8,9 +8,9 @@
 html,
 body {
   font-family: c64_userregular, helvetica, sans-serif;
+  font-size: 2vw;
   letter-spacing: .2vw;
   background: black;
   text-transform: uppercase;
-  /*color: #999;*/
   color: darkgray;
 }
