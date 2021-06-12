@@ -8,4 +8,6 @@ div.telengard-logo {
 div.telengard-logo img {
     width: 100%;
 }
-p.telengard-welcome-to { }
+p.telengard-welcome-to {
+    margin-bottom: 3em;
+}

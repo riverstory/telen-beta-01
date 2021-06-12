@@ -6,6 +6,8 @@ import { MainRoutingModule } from "./main-routing.module";
 
 // Component
 import { MainComponent } from "./main.component";
+import { LoadingComponent } from "./loading/loading.component";
+import { CreatingComponent } from "./creating/creating.component";
 
 // Services
 import * as services from 'src/app/core/services';
@@ -16,7 +18,9 @@ import * as services from 'src/app/core/services';
         MainRoutingModule
     ],
     declarations: [
-        MainComponent
+        MainComponent,
+        LoadingComponent,
+        CreatingComponent
     ],
     providers: [
     	services.BaseDataService

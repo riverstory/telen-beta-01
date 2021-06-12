@@ -15,7 +15,11 @@ import * as services from 'src/app/core/services';
 export class MainComponent implements OnInit {
     constructor(
         private baseDataService: services.BaseDataService
-    ) { }
+    ) {
+
+        console.log ('MainComponent');
+
+     }
 
     ngOnInit() {
         this.testIt();
