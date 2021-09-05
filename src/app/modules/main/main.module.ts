@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 // Modules
 import { MainRoutingModule } from "./main-routing.module";
+import { LayoutModule } from "./layout/layout.module";
 
 // Component
 import { MainComponent } from "./main.component";
@@ -15,7 +16,8 @@ import * as services from 'src/app/core/services';
 @NgModule({
     imports: [
         CommonModule,
-        MainRoutingModule
+        MainRoutingModule,
+        LayoutModule
     ],
     declarations: [
         MainComponent,

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
 
 // Resources
 // TODO
@@ -8,18 +7,17 @@ import { Router } from '@angular/router'
 import * as services from 'src/app/core/services';
 
 @Component({
-    selector: 'app-main',
-    templateUrl: './main.component.html',
-    styleUrls: ['./main.component.css']
+    selector: 'app-layout',
+    templateUrl: './layout.component.html',
+    styleUrls: ['./layout.component.css']
 })
 
-export class MainComponent implements OnInit {
+export class LayoutComponent implements OnInit {
     constructor(
-        private router: Router,
         private baseDataService: services.BaseDataService
     ) {
 
-        console.log ('MainComponent');
+        console.log ('LayoutComponent');
 
      }
 
@@ -35,10 +33,6 @@ export class MainComponent implements OnInit {
         }, err => {
             console.log ('there was an error', err);
         });
-    }
-
-    onGoToGame () {
-        this.router.navigate(['game-layout']);
     }
 
 }
