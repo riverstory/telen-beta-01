@@ -8,8 +8,11 @@ import { PlayerMapComponent } from "./player-map/player-map.component";
 import { PlayerUIComponent } from "./player-ui/player-ui.component";
 
 
-// Services
+// Core Services
 import * as services from 'src/app/core/services';
+
+// Layout Services
+import { PlayerMapService } from './player-map/player-map.service'
 
 @NgModule({
     imports: [
@@ -22,7 +25,8 @@ import * as services from 'src/app/core/services';
         PlayerUIComponent
     ],
     providers: [
-    	services.BaseDataService
+    	services.BaseDataService,
+        PlayerMapService
     ]
 })
 export class LayoutModule {}

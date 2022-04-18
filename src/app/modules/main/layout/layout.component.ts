@@ -22,7 +22,7 @@ export class LayoutComponent implements OnInit {
      }
 
     ngOnInit() {
-        this.testIt();
+        // this.testIt();
     }
 
 

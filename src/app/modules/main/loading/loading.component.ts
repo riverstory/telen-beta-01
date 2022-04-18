@@ -20,7 +20,7 @@ export class LoadingComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.testIt();
+        // this.testIt();
     }
 
     goToCreatingMonsters() {

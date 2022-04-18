@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 
 // Services
 import * as services from 'src/app/core/services';
+import { PlayerMapService } from './player-map.service';
 
 @Component({
     selector: 'app-player-map',
@@ -14,13 +15,25 @@ import * as services from 'src/app/core/services';
 })
 
 export class PlayerMapComponent implements OnInit {
+
+    private startPosition: any;
+    public character = {"new": true, "id": 1234}; // TODO: create and use Character model
+
+
     constructor(
         // private router: Router,
-        private baseDataService: services.BaseDataService
+        private baseDataService: services.BaseDataService,
+        private playerMapService: PlayerMapService
     ) { }
 
     ngOnInit() {
-        this.testIt();
+        // this.testIt();
+        // -------------
+        this.playerMapService.getPlayerStartPosition(this.character).subscribe(result => {
+            this.startPosition = result.response.data;
+        });
+
+        console.log ('PlayerMapComponent', this);
     }
 
     goToMain() {

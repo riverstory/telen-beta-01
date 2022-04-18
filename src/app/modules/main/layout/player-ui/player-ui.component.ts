@@ -20,7 +20,7 @@ export class PlayerUIComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.testIt();
+        // this.testIt();
     }
 
     goToMain() {

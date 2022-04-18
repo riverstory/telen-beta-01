@@ -24,7 +24,7 @@ export class MainComponent implements OnInit {
      }
 
     ngOnInit() {
-        this.testIt();
+        // this.testIt();
     }
 
 

@@ -20,7 +20,7 @@ export class PlayerAssetsComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.testIt();
+        // this.testIt();
     }
 
     goToMain() {
