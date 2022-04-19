@@ -8,8 +8,11 @@ import { PlayerMapComponent } from "./player-map/player-map.component";
 import { PlayerUIComponent } from "./player-ui/player-ui.component";
 
 
-// Core Services
+// Core: Services
 import * as services from 'src/app/core/services';
+
+// Core: Pipes
+import * as pipes from 'src/app/core/shared/pipes';
 
 // Layout Services
 import { PlayerMapService } from './player-map/player-map.service'
@@ -22,7 +25,8 @@ import { PlayerMapService } from './player-map/player-map.service'
         LayoutComponent,
         PlayerAssetsComponent,
         PlayerMapComponent,
-        PlayerUIComponent
+        PlayerUIComponent,
+        pipes.SafePipe
     ],
     providers: [
     	services.BaseDataService,

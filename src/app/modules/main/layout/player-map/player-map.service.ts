@@ -29,7 +29,7 @@ export class PlayerMapService {
 
 
     public getDungeonRoomMetaData (coordinates) {
-        console.log ('PlayerMapService -> getDungeonRoomMetaData');
+        // console.log ('PlayerMapService -> getDungeonRoomMetaData');
         return this.http.post<any>('/telengard-beta/api/map/room', coordinates)
             .pipe(
                 catchError(error => {
@@ -41,5 +41,58 @@ export class PlayerMapService {
                     return data;
                 })
             );
+    }
+
+    public getCoordinates (x, y, z, i) {
+        switch (i) {
+            case 1:
+                return { "x": x-1, "y": y-1, "z": z, "i": i };
+            break;
+            case 2:
+                return { "x": x, "y": y-1, "z": z, "i": i };
+            break;
+            case 3:
+                return { "x": x+1, "y": y-1, "z": z, "i": i };
+            break;
+            case 4:
+                return { "x": x+2, "y": y-1, "z": z, "i": i };
+            break;
+            case 5:
+                return { "x": x-1, "y": y, "z": z, "i": i };
+            break;
+            case 6:
+                return { "x": x, "y": y, "z": z, "i": i };
+            break;
+            case 7:
+                return { "x": x+1, "y": y, "z": z, "i": i };
+            break;
+            case 8:
+                return { "x": x+2, "y": y, "z": z, "i": i };
+            break;
+            case 9:
+                return { "x": x-1, "y": y+1, "z": z, "i": i };
+            break;
+            case 10:
+                return { "x": x, "y": y+1, "z": z, "i": i };
+            break;
+            case 11:
+                return { "x": x+1, "y": y+1, "z": z, "i": i };
+            break;
+            case 12:
+                return { "x": x+2, "y": y+1, "z": z, "i": i };
+            break;
+            case 13:
+                return { "x": x-1, "y": y+2, "z": z, "i": i };
+            break;
+            case 14:
+                return { "x": x, "y": y+2, "z": z, "i": i };
+            break;
+            case 15:
+                return { "x": x+1, "y": y+2, "z": z, "i": i };
+            break;
+            case 16:
+                return { "x": x+2, "y": y+2, "z": z, "i": i };
+            break;
+        }
     }
 }

@@ -1,3 +1,151 @@
 div.telengard-player-map {
 
 }
+
+.hero-main {
+    position: relative;
+    width: 56px;
+    height: 38px;
+}
+.hero-sub {
+    position: absolute;
+    top: 60%; left: 60%;
+    transform: translate(-50%,-50%);
+    color: #ccc;
+    margin: 25% auto;
+}
+.hero-image {
+    max-height: 1.6em;
+    margin-left: 1.6em;
+}
+
+
+div#map-grid {
+    display: inline-block;
+}
+
+/* THE DUNGEON MAP */
+.map-grid-block {
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+
+    border: 1px solid #ccc;
+
+}
+
+/* Classes follow NORTH-WEST (north then west) boundary naming pattern */
+.empty-empty {
+    background: none;
+
+}
+.empty-door {
+    background: url('/assets/img/dungeon/vdoor.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.empty-wall {
+    background: url('/assets/img/dungeon/vwall.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.door-empty {
+    background: url('/assets/img/dungeon/hdoor.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.wall-empty {
+    background: url('/assets/img/dungeon/hwall.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+.wall-wall {
+    background: url('/assets/img/dungeon/hwall.png'), url('/assets/img/dungeon/vwall.png');
+    background-position: top, left;
+    background-repeat: no-repeat, no-repeat;
+}
+.wall-door {
+    background: url('/assets/img/dungeon/hwall.png'), url('/assets/img/dungeon/vdoor.png');
+    background-position: top, left;
+    background-repeat: no-repeat, no-repeat;
+}
+.door-wall {
+    background: url('/assets/img/dungeon/hdoor.png'), url('/assets/img/dungeon/vwall.png');
+    background-position: top, left;
+    background-repeat: no-repeat, no-repeat;
+}
+.door-door {
+    background: url('/assets/img/dungeon/hdoor.png'), url('/assets/img/dungeon/vdoor.png');
+    background-position: top, left;
+    background-repeat: no-repeat, no-repeat;
+}
+.wall-wall-fix-corner {
+    background: url('/assets/img/dungeon/hwall.png'), url('/assets/img/dungeon/vwall.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: top, left;
+    background-repeat: no-repeat, no-repeat;
+}
+.wall-door-fix-corner {
+    background: url('/assets/img/dungeon/hwall.png'), url('/assets/img/dungeon/vdoor.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: top, left;
+    background-repeat: no-repeat, no-repeat;
+}
+.door-wall-fix-corner {
+    background: url('/assets/img/dungeon/hdoor.png'), url('/assets/img/dungeon/vwall.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: top, left;
+    background-repeat: no-repeat, no-repeat;
+}
+.door-door-fix-corner {
+    background: url('/assets/img/dungeon/hdoor.png'), url('/assets/img/dungeon/vdoor.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: top, left, -48px 0px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+.empty-empty-fix-corner {
+    background: url('/assets/img/dungeon/hwall.png');
+    background-repeat: no-repeat;
+    background-position-x: -48px;
+}
+.empty-door-fix-corner {
+    background: url('/assets/img/dungeon/vdoor.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: left, -48px 0px;
+    background-repeat: no-repeat, no-repeat;
+}
+.empty-wall-fix-corner {
+    background: url('/assets/img/dungeon/vwall.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: left, -48px 0px;
+    background-repeat: no-repeat, no-repeat;
+}
+.door-empty-fix-corner {
+    background: url('/assets/img/dungeon/hdoor.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: top, -48px 0px;
+    background-repeat: no-repeat, no-repeat;
+}
+.wall-empty-fix-corner {
+    background: url('/assets/img/dungeon/hwall.png'), url('/assets/img/dungeon/hwall.png');
+    background-position: top, -48px 0px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.feature-main.stairway-up,
+.feature-main.stairway-down,
+.feature-main.stairway-both {
+    position: absolute;
+    top: 50px;
+    left: 73px;
+}
+
+.feature-main.elevator,
+.feature-main.pit,
+.feature-main.teleporter,
+.feature-main.altar,
+.feature-main.fountain,
+.feature-main.throne {
+    position: absolute;
+    left: 66px;
+    top: 88px;
+}
+.feature-main.gray-misty-cube,
+.feature-main.small-box-with-buttons {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}

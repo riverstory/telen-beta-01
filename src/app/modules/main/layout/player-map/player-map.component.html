@@ -1,5 +1,30 @@
-<div class="telengard-player-map">
-    Map Panel
+<div class="telengard-player-map" id="map-grid">
+    <div class="container" *ngIf="dungeonMapData.length === 16">
+        <div class="row">
+            <div class="col-sm" [innerHTML]="getMapGridHtml(1) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(2) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(3) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(4) | safe: 'html'"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm" [innerHTML]="getMapGridHtml(5) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(6) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(7) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(8) | safe: 'html'"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm" [innerHTML]="getMapGridHtml(9) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(10) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(11) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(12) | safe: 'html'"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm" [innerHTML]="getMapGridHtml(13) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(14) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(15) | safe: 'html'"></div>
+            <div class="col-sm" [innerHTML]="getMapGridHtml(16) | safe: 'html'"></div>
+        </div>
+    </div>
 </div>
 
 
