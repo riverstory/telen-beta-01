@@ -2,6 +2,11 @@ div.telengard-player-map {
 
 }
 
+.col-sm {
+    width: 56px;
+    height: 56px;
+}
+
 .hero-main {
     position: relative;
     width: 56px;
